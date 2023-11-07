@@ -58,6 +58,8 @@ class TFlow3(FlowSpec):
             
         self.results = sorted(map(score, inputs), key=lambda x: -x[1]) 
         self.model = self.results[0][0]
+
+        self.test1 = {"firstName": "Amit", "lastName": "Agrawal"}
         
         self.next(self.end)
 
